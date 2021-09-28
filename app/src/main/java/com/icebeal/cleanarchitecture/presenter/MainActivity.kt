@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val factory = ViewModelFactory.getInstance()
         mainViewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
 
-        mainViewModel.setName("Yaya")
+        mainViewModel.setName("Yayas")
         mainViewModel.message.observe(this, {
 
             binding?.text?.text = it.message
